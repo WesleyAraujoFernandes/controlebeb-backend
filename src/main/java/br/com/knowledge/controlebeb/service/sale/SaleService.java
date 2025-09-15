@@ -224,7 +224,7 @@ public class SaleService {
         if (product.getQuantity() < quantity) {
             throw new IllegalArgumentException("Estoque insuficiente para o produto: " + product.getName());
         }
-        product.setStock(product.getStock() - quantity);
+        //product.setStock(product.getStock() - quantity);
         productRepository.save(product);
         // Procura se já existe o item desse produto na venda
         Optional<SaleItem> existingItem = sale.getItems().stream()

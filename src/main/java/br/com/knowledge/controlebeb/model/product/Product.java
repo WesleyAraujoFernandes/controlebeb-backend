@@ -42,7 +42,4 @@ public class Product {
     @NotNull(message = "O estoque mínimo é obrigatório")
     private Integer minimumStock;
 
-    @Column(name = "stock", nullable = false)
-    @NotNull(message = "O estoque atual é obrigatório")
-    private Integer stock;
 }
