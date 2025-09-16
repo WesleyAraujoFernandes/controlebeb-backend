@@ -52,7 +52,7 @@ public class ProductController {
     }
 
     // ============================
-    // Apagar produtos
+    // Excluir produtos
     // ============================
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
